@@ -5,12 +5,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blanchard</title>
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-  <link rel="stylesheet" href="/resources/demos/style.css">
-
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-
+  <link rel="stylesheet" href="css/swiper-2.css">
+  <link rel="stylesheet" href="css/swiper-2.css">
+  <link rel="stylesheet" href="css/accordion-1.css">
   <link rel="stylesheet" href="css/choices.min.css">
   <link rel="stylesheet" href="css/simplebar.css">
   <link rel="stylesheet" href="CSS/normalize.css">
@@ -19,225 +16,225 @@
 <body>
   <header>
     <div class="container header__container">
-      <div class="header__content">
+      <div class="header">
         <button class="header__burger">
           <img src="img/Burger.svg" alt="">
         </button>
-        <img class="header__logo_img" src="img/Лого.svg" alt="">
-        <nav class="header__nav">
-          <ul class="header__nav_list">
-            <li class="header__nav_list_item">
-              <a class="header__nav_list_item_link" href="">О нас</a>
+        <img class="header__img" src="img/Лого.svg" alt="">
+        <nav class="header__nav header-nav">
+          <ul class="header-nav__list">
+            <li class="header-nav__item">
+              <a class="header-nav__link" href="">О нас</a>
             </li>
-            <li class="header__nav_list_item">
-              <a class="header__nav_list_item_link" href="">Галерея</a>
+            <li class="header-nav__item">
+              <a class="header-nav__link" href="">Галерея</a>
             </li>
-            <li class="header__nav_list_item">
-              <a class="header__nav_list_item_link" href="">Каталог</a>
+            <li class="header-nav__item">
+              <a class="header-nav__link" href="">Каталог</a>
             </li>
-            <li class="header__nav_list_item">
-              <a class="header__nav_list_item_link" href="">События</a>
+            <li class="header-nav__item">
+              <a class="header-nav__link" href="">События</a>
             </li>
-            <li class="header__nav_list_item">
-              <a class="header__nav_list_item_link" href="">Издания</a>
+            <li class="header-nav__item">
+              <a class="header-nav__link" href="">Издания</a>
             </li>
-            <li class="header__nav_list_item">
-              <a class="header__nav_list_item_link" href="">Проекты</a>
+            <li class="header-nav__item">
+              <a class="header-nav__link" href="">Проекты</a>
             </li>
-            <li class="header__nav_list_item">
-              <a class="header__nav_list_item_link" href="">Контакты</a>
+            <li class="header-nav__item">
+              <a class="header-nav__link" href="">Контакты</a>
             </li>
           </ul>
         </nav>
-        <button class="header__button_login" type="button">
-          <svg class="header__button_svg" width="13" height="13" viewbox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <button class="header-button" type="button">
+          <svg class="header-button__svg" width="13" height="13" viewbox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z" fill="white"/>
           </svg>
           Войти
         </button>
-        <button class="header__serch_icon"><img src="img/search-svg-1600.svg" alt=""></button>
+        <button class="header__button--1600"><img src="img/search-svg-1600.svg" alt=""></button>
       </div>
-      <div class="hero__header">
-        <ul class="hero__list">
-          <li class="hero__list_item">
-            <button class="hero__header_button hero__header_button_1">
+      <div class="hero-header">
+        <ul class="hero-header__list">
+          <li class="hero-header-item">
+            <button class="hero-header-item__button hero-header-item__button--1">
               Реализм
-              <svg class="hero__list_svg" width="12" height="7" viewbox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg class="hero-header-item__svg" width="12" height="7" viewbox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M11 1L6 6L0.999998 1" stroke="white"/>
               </svg>
             </button> 
-            <ul data-simplebar class="hero__dropdown_list hero__dropdown_list_1">
-              <li class="hero__dropdown_item hero__dropdown_background-image-1">
+            <ul data-simplebar class="hero-dropdown hero-dropdown--1">
+              <li class="hero-dropdown__item hero-dropdown__item--1">
                 Тинторетто
               </li>
-              <li class="hero__dropdown_item hero__dropdown_background-image-2">
+              <li class="hero-dropdown__item hero-dropdown__item--2">
                 Фридрих
               </li>
-              <li class="hero__dropdown_item hero__dropdown_background-image-3">
+              <li class="hero-dropdown__item hero-dropdown__item--3">
                 Леонардо
               </li>
-              <li class="hero__dropdown_item hero__dropdown_background-image-4">
+              <li class="hero-dropdown__item hero-dropdown__item--4">
                 Верроккьо
               </li>
-              <li class="hero__dropdown_item hero__dropdown_background-image-1">
+              <li class="hero-dropdown__item hero-dropdown__item--1">
                 Тинторетто
               </li>
-              <li class="hero__dropdown_item hero__dropdown_background-image-2">
+              <li class="hero-dropdown__item hero-dropdown__item--2">
                 Фридрих
               </li>
-              <li class="hero__dropdown_item hero__dropdown_background-image-3">
+              <li class="hero-dropdown__item hero-dropdown__item--3">
                 Леонардо
               </li>
-              <li class="hero__dropdown_item hero__dropdown_background-image-4">
+              <li class="hero-dropdown__item hero-dropdown__item--4">
                 Верроккьо
               </li>
             </ul>
           </li>
-          <li class="hero__list_item">
-            <button class="hero__header_button hero__header_button_2">
+          <li class="hero-header-item">
+            <button class="hero-header-item__button hero-header-item__button--2">
               Импрессионизм
-              <svg class="hero__list_svg" width="12" height="7" viewbox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg class="hero-header-item__svg" width="12" height="7" viewbox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M11 1L6 6L0.999998 1" stroke="white"/>
               </svg>
-            </button>
-            <ul data-simplebar class="hero__dropdown_list hero__dropdown_list_2">
-              <li class="hero__dropdown_item hero__dropdown_background-image-1">
+            </button> 
+            <ul data-simplebar class="hero-dropdown hero-dropdown--2">
+              <li class="hero-dropdown__item hero-dropdown__item--1">
                 Тинторетто
               </li>
-              <li class="hero__dropdown_item hero__dropdown_background-image-2">
+              <li class="hero-dropdown__item hero-dropdown__item--2">
                 Фридрих
               </li>
-              <li class="hero__dropdown_item hero__dropdown_background-image-3">
+              <li class="hero-dropdown__item hero-dropdown__item--3">
                 Леонардо
               </li>
-              <li class="hero__dropdown_item hero__dropdown_background-image-4">
+              <li class="hero-dropdown__item hero-dropdown__item--4">
                 Верроккьо
               </li>
-              <li class="hero__dropdown_item hero__dropdown_background-image-1">
+              <li class="hero-dropdown__item hero-dropdown__item--1">
                 Тинторетто
               </li>
-              <li class="hero__dropdown_item hero__dropdown_background-image-2">
+              <li class="hero-dropdown__item hero-dropdown__item--2">
                 Фридрих
               </li>
-              <li class="hero__dropdown_item hero__dropdown_background-image-3">
+              <li class="hero-dropdown__item hero-dropdown__item--3">
                 Леонардо
               </li>
-              <li class="hero__dropdown_item hero__dropdown_background-image-4">
+              <li class="hero-dropdown__item hero-dropdown__item--4">
                 Верроккьо
               </li>
             </ul>
           </li>
-          <li class="hero__list_item">
-            <button class="hero__header_button hero__header_button_3">
+          <li class="hero-header-item">
+            <button class="hero-header-item__button hero-header-item__button--3">
               Постимпрессионизм
-              <svg class="hero__list_svg" width="12" height="7" viewbox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg class="hero-header-item__svg" width="12" height="7" viewbox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M11 1L6 6L0.999998 1" stroke="white"/>
               </svg>
-            </button>
-            <ul data-simplebar class="hero__dropdown_list hero__dropdown_list_3">
-              <li class="hero__dropdown_item hero__dropdown_background-image-1">
+            </button> 
+            <ul data-simplebar class="hero-dropdown hero-dropdown--3">
+              <li class="hero-dropdown__item hero-dropdown__item--1">
                 Тинторетто
               </li>
-              <li class="hero__dropdown_item hero__dropdown_background-image-2">
+              <li class="hero-dropdown__item hero-dropdown__item--2">
                 Фридрих
               </li>
-              <li class="hero__dropdown_item hero__dropdown_background-image-3">
+              <li class="hero-dropdown__item hero-dropdown__item--3">
                 Леонардо
               </li>
-              <li class="hero__dropdown_item hero__dropdown_background-image-4">
+              <li class="hero-dropdown__item hero-dropdown__item--4">
                 Верроккьо
               </li>
-              <li class="hero__dropdown_item hero__dropdown_background-image-1">
+              <li class="hero-dropdown__item hero-dropdown__item--1">
                 Тинторетто
               </li>
-              <li class="hero__dropdown_item hero__dropdown_background-image-2">
+              <li class="hero-dropdown__item hero-dropdown__item--2">
                 Фридрих
               </li>
-              <li class="hero__dropdown_item hero__dropdown_background-image-3">
+              <li class="hero-dropdown__item hero-dropdown__item--3">
                 Леонардо
               </li>
-              <li class="hero__dropdown_item hero__dropdown_background-image-4">
+              <li class="hero-dropdown__item hero-dropdown__item--4">
                 Верроккьо
               </li>
             </ul>
           </li>
-          <li class="hero__list_item">
-            <button class="hero__header_button hero__header_button_4">
+          <li class="hero-header-item">
+            <button class="hero-header-item__button hero-header-item__button--4">
               Авангард
-              <svg class="hero__list_svg" width="12" height="7" viewbox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg class="hero-header-item__svg" width="12" height="7" viewbox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M11 1L6 6L0.999998 1" stroke="white"/>
               </svg>
-            </button>
-            <ul data-simplebar class="hero__dropdown_list hero__dropdown_list_4">
-              <li class="hero__dropdown_item hero__dropdown_background-image-1">
+            </button> 
+            <ul data-simplebar class="hero-dropdown hero-dropdown--4">
+              <li class="hero-dropdown__item hero-dropdown__item--1">
                 Тинторетто
               </li>
-              <li class="hero__dropdown_item hero__dropdown_background-image-2">
+              <li class="hero-dropdown__item hero-dropdown__item--2">
                 Фридрих
               </li>
-              <li class="hero__dropdown_item hero__dropdown_background-image-3">
+              <li class="hero-dropdown__item hero-dropdown__item--3">
                 Леонардо
               </li>
-              <li class="hero__dropdown_item hero__dropdown_background-image-4">
+              <li class="hero-dropdown__item hero-dropdown__item--4">
                 Верроккьо
               </li>
-              <li class="hero__dropdown_item hero__dropdown_background-image-1">
+              <li class="hero-dropdown__item hero-dropdown__item--1">
                 Тинторетто
               </li>
-              <li class="hero__dropdown_item hero__dropdown_background-image-2">
+              <li class="hero-dropdown__item hero-dropdown__item--2">
                 Фридрих
               </li>
-              <li class="hero__dropdown_item hero__dropdown_background-image-3">
+              <li class="hero-dropdown__item hero-dropdown__item--3">
                 Леонардо
               </li>
-              <li class="hero__dropdown_item hero__dropdown_background-image-4">
+              <li class="hero-dropdown__item hero-dropdown__item--4">
                 Верроккьо
               </li>
             </ul>
           </li>
-          <li class="hero__list_item">
-            <button class="hero__header_button hero__header_button_5">
+          <li class="hero-header-item">
+            <button class="hero-header-item__button hero-header-item__button--5">
               Футуризм
-              <svg class="hero__list_svg" width="12" height="7" viewbox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg class="hero-header-item__svg" width="12" height="7" viewbox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M11 1L6 6L0.999998 1" stroke="white"/>
               </svg>
-            </button>
-            <ul data-simplebar class="hero__dropdown_list hero__dropdown_list_5">
-              <li class="hero__dropdown_item hero__dropdown_background-image-1">
+            </button> 
+            <ul data-simplebar class="hero-dropdown hero-dropdown--5">
+              <li class="hero-dropdown__item hero-dropdown__item--1">
                 Тинторетто
               </li>
-              <li class="hero__dropdown_item hero__dropdown_background-image-2">
+              <li class="hero-dropdown__item hero-dropdown__item--2">
                 Фридрих
               </li>
-              <li class="hero__dropdown_item hero__dropdown_background-image-3">
+              <li class="hero-dropdown__item hero-dropdown__item--3">
                 Леонардо
               </li>
-              <li class="hero__dropdown_item hero__dropdown_background-image-4">
+              <li class="hero-dropdown__item hero-dropdown__item--4">
                 Верроккьо
               </li>
-              <li class="hero__dropdown_item hero__dropdown_background-image-1">
+              <li class="hero-dropdown__item hero-dropdown__item--1">
                 Тинторетто
               </li>
-              <li class="hero__dropdown_item hero__dropdown_background-image-2">
+              <li class="hero-dropdown__item hero-dropdown__item--2">
                 Фридрих
               </li>
-              <li class="hero__dropdown_item hero__dropdown_background-image-3">
+              <li class="hero-dropdown__item hero-dropdown__item--3">
                 Леонардо
               </li>
-              <li class="hero__dropdown_item hero__dropdown_background-image-4">
+              <li class="hero-dropdown__item hero-dropdown__item--4">
                 Верроккьо
               </li>
             </ul>
           </li>
         </ul>
-        <form class="hero__search_form" action="">
-          <button class="hero__search_icon_button" type="submit">
-            <svg class="hero__search_svg" width="23" height="22" viewbox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <form class="hero-header-form" action="">
+          <button class="hero-header-form__button" type="submit">
+            <svg class="hero-header-form__svg" width="23" height="22" viewbox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect width="6.8678" height="1.71695" transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="white"/>
               <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z" fill="white"/>
             </svg>
           </button>
-          <input class="hero__search_input" type="text" placeholder="Поиск по сайту">
+          <input class="hero-header-form__input" type="text" placeholder="Поиск по сайту">
         </form>
       </div>
     </div>
@@ -840,20 +837,16 @@
       </div>
     </div>
   </footer>
- 
-
-  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
-  <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
   
+  <script src="js/yandex-map.js" type="text/javascript"></script>
+  <script src="js/accordion-1.js"></script>
+  <script src="js/accordion-2.js"></script>
+  <script src="js/swiper-1.js"></script>
+  <script src="js/swiper-2.min.js"></script>
   <script src="js/choices.min.js"></script>
   <script src="js/hello.js"></script>
   <script src="js/hero-menu.js"></script>
   <script src="js/simplebar.js"></script>
-
 
   <script>
     const swiper = new Swiper('.swiper-container', {
@@ -905,6 +898,12 @@
         slidesPerGroup: 2,
         slidesPerColumn: 2,
       },
+      220: {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        slidesPerColumn: 1,
+        spaceBetween: 0,
+      }
     }
   });
   </script>
