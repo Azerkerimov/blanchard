@@ -249,7 +249,6 @@
             <div class="swiper-slide hero__swiper_image-3"></div>
           </div>
           <div class="hero__content">
-            
             <div class="hero__content_text">Прикоснитесь к прекрасному</div>
             <div class="hero__content_text-2">Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.</div>
             <button class="hero__button">Подписаться на рассылку</button>
@@ -535,6 +534,71 @@
     <section class="events">
       <div class="container events__container">
         <h2 class="events__heading">События</h2>
+        <div class="swiper-pagination-events"></div>
+        <div class="swiper-container-events">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="events__list_item">
+                <img class="events__item_img" src="img/event1.png" alt="Event">
+                <p class="events__item_date">Музей им. Щусева</p>
+                <p class="events__item_date">с 20 марта по 30 апреля</p>
+                <h3 class="events__item_heading">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.</h3>
+                <p class="events__item_content">Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта. Далеко-далеко за словесными горами в </p>
+                <a class="events__item_link" href="">Подробнее</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="events__list_item">
+                <img class="events__item_img" src="img/event2.png" alt="Event">
+                <p class="events__item_date">ММОМА</p>
+                <p class="events__item_date">24 марта 19:00</p>
+                <h3 class="events__item_heading">Книжная гравюра в живом восприятии</h3>
+                <p class="events__item_content">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо.</p>
+                <a class="events__item_link" href="">Подробнее</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="events__list_item">
+                <img class="events__item_img" src="img/event3.png" alt="Event">
+                <p class="events__item_date">Еврейский музей</p>
+                <p class="events__item_date">с 31 марта по 21 апреля</p>
+                <h3 class="events__item_heading">Книжная гравюра в живом восприятии</h3>
+                <p class="events__item_content">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо.</p>
+                <a class="events__item_link" href="">Подробнее</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="events__list_item">
+                <img class="events__item_img" src="img/event4.png" alt="Event">
+                <p class="events__item_date">Третьяковка на Крымском валу</p>
+                <p class="events__item_date">с 30 марта по 30 апреля</p>
+                <h3 class="events__item_heading">Книжная гравюра в живом восприятии</h3>
+                <p class="events__item_content">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо.</p>
+                <a class="events__item_link" href="">Подробнее</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="events__list_item">
+                <img class="events__item_img" src="img/event5.png" alt="Event">
+                <p class="events__item_date">ММАМ</p>
+                <p class="events__item_date">с 8 апреля по 20 мая</p>
+                <h3 class="events__item_heading">Книжная гравюра в живом восприятии</h3>
+                <p class="events__item_content">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо.</p>
+                <a class="events__item_link" href="">Подробнее</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="events__list_item">
+                <img class="events__item_img" src="img/event5.png" alt="Event">
+                <p class="events__item_date">Музей им. Щусева</p>
+                <p class="events__item_date">с 20 марта по 30 апреля</p>
+                <h3 class="events__item_heading">Книжная гравюра в живом восприятии</h3>
+                <p class="events__item_content">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо.</p>
+                <a class="events__item_link" href="">Подробнее</a>
+              </div>
+            </div>
+          </div>
+        </div>
         <ul class="events__list">
           <li class="events__list_item">
             <img class="events__item_img" src="img/event1.png" alt="Event">
@@ -886,24 +950,23 @@
     },
     breakpoints: {
     // when window width is >= 16000px
+      320: {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        slidesPerColumn: 1,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 34,
+        slidesPerGroup: 2,
+        slidesPerColumn: 2,
+      },
       1600: {
         slidesPerView: 3,
         spaceBetween: 50,
         slidesPerGroup: 3,
         slidesPerColumn: 2,
       },
-      600: {
-        slidesPerView: 2,
-        spaceBetween: 34,
-        slidesPerGroup: 2,
-        slidesPerColumn: 2,
-      },
-      220: {
-        slidesPerView: 1,
-        slidesPerGroup: 1,
-        slidesPerColumn: 1,
-        spaceBetween: 0,
-      }
     }
   });
   </script>
@@ -947,6 +1010,11 @@
         slidesPerGroup: 2,
         slidesPerColumn: 1,
       },
+      320: {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        slidesPerColumn: 1,
+      }
     }
   });
   </script>
@@ -987,6 +1055,22 @@
         slidesPerColumn: 1,
       },
     }
+  });
+  </script>
+
+  <script>
+    const swiper_5 = new Swiper('.swiper-container-events', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    slidesPerView: 1,
+    slidesPerColumn: 1,
+    slidesPerGroup: 1,
+    loopFillGroupWithBlank: true,
+    // Navigation arrows
+    pagination: {
+      el: '.swiper-pagination-events',
+    },
   });
   </script>
 
