@@ -49,24 +49,31 @@ img {
 }
 
 /*Header*/
-header {
-  height: 100px;
-  background-color: #000000;
+.header__container {
+  max-width: 1920px;
 }
-.header-content {
+header {
   position: absolute;
   top: 0;
-  z-index: 929292929;
-  min-width: 1600px;
+  z-index: 3;
 }
-.header__container {
-  position: relative;
+
+.hero-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 23px 160px 28px 160px;
+  background-color: rgba(0, 0, 0, 40%);
 }
+
 .header {
+  background-color: #000000;
   display: flex;
   align-items: center;
-  padding: 30px 0px;
+  padding: 30px 160px;
 }
+
+
 .header__img {
   margin-right: 179px;
 }
@@ -101,7 +108,7 @@ header {
 }
 .header-button {
   padding-right: 0;
-  margin-left: auto;
+  margin-left: 270px;
   background-color: transparent;
   color: #ffffff;
   font-size: 18px;
@@ -139,17 +146,6 @@ header {
   cursor: pointer;
 }
 
-.hero-header {
-  z-index: 222;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 23px 160px 28px 160px;
-  background-color: rgba(0, 0, 0, 40%);
-  width: 1920px;
-  position: absolute;
-  left: -160px;
-}
 .hero-header__list {
   margin-right: auto;
   display: flex;
@@ -274,7 +270,7 @@ header {
   width: 100%;
   position: absolute;
   z-index: 1;
-  top: 140px;
+  top: 240px;
 }
 
 .hero__content_text {
@@ -321,7 +317,7 @@ header {
 }
 .swiper-container {
   overflow: hidden;
-  height: 700px;
+  height: 800px;
 }
 .hero__swiper_image-1 {
   height: 100%;
@@ -1249,13 +1245,18 @@ input[type=number] {
 
 @media (max-width:1600px) {
   /*Header*/
+  .header__container {
+    background-color: #000000;
+  }
   .container {
     padding-left: 50px;
     padding-right: 50px;
   }
+  header {
+    position: relative;
+  }
   .header-content {
     min-width: auto;
-    width: 1110px;
   }
   .header__nav {
     display: none;
