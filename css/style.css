@@ -49,20 +49,21 @@ img {
 }
 
 /*Header*/
-.header__container {
-  max-width: 1920px;
-}
-header {
+
+
+.header-content {
   position: absolute;
   top: 0;
   z-index: 3;
+  width: 100%;
+  left: 0;
 }
 
 .hero-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 23px 160px 28px 160px;
+  padding: 22px 160px 21px 157px;
   background-color: rgba(0, 0, 0, 40%);
 }
 
@@ -71,11 +72,12 @@ header {
   display: flex;
   align-items: center;
   padding: 30px 160px;
+  justify-content: space-between;
 }
 
 
 .header__img {
-  margin-right: 179px;
+  margin-right: -90px;
 }
 
 .header-nav__list {
@@ -108,7 +110,6 @@ header {
 }
 .header-button {
   padding-right: 0;
-  margin-left: 270px;
   background-color: transparent;
   color: #ffffff;
   font-size: 18px;
@@ -270,12 +271,12 @@ header {
   width: 100%;
   position: absolute;
   z-index: 1;
-  top: 240px;
+  top: 242px;
+  left: 154px;
 }
 
 .hero__content_text {
-  margin-left: 160px;
-  margin-bottom: 24px;
+  margin-bottom: 19px;
   color: #ffffff;
   font-weight: 700;
   font-size: 72px;
@@ -284,7 +285,7 @@ header {
   pointer-events: none;
 }
 .hero__content_text-2 {
-  margin-left: 160px;
+  margin-left: 5px;
   margin-bottom: 92px;
   color: #ffffff;
   font-weight: 700;
@@ -294,7 +295,7 @@ header {
   pointer-events: none;
 }
 .hero__button {
-  margin-left: 160px;
+  margin-left: 5px;
   padding: 22.5px 35px;
   color: #ffffff;
   font-weight: 700;
@@ -334,17 +335,23 @@ header {
 
 .hero-header-form {
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 .hero-header-form__button {
+  padding-left: 0;
+  padding-right: 7px;
   background-color: transparent;
   border: none;
   cursor: pointer;
 }
+.hero-header-form__svg {
+  transform: translateY(4px);
+}
 .hero-header-form__input {
+  margin-right: 8px;
   background-color: transparent;
   border: none;
+  font-size: 18px;
   color: #ffffff;
   width: 215px;
   border-bottom: 1px solid #ffffff;
