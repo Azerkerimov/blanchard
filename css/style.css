@@ -29,6 +29,9 @@
 body {
   font-family: opensans;
 }
+.body {
+  padding-right: 17px;
+}
 a {
   text-decoration: none;
 }
@@ -53,7 +56,7 @@ img {
   position: absolute;
   top: 0;
   z-index: 3;
-  width: 100%;
+  width: calc(100% - 17px);
 }
 .header-container {
   max-width: 100%;
@@ -72,7 +75,8 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 22px 0px 21px 0px;
+  padding: 22px 0px 21px 9px;
+
 }
 .header-background {
   background-color: #000000;
@@ -84,6 +88,7 @@ img {
   display: flex;
   align-items: center;
   padding: 30px 0px;
+  padding-left: 13px;
   justify-content: space-between;
 }
 
@@ -121,6 +126,7 @@ img {
   outline-offset: 3px;
 }
 .header-button {
+  padding-left: 0;
   padding-right: 0;
   background-color: transparent;
   color: #ffffff;
@@ -129,6 +135,7 @@ img {
   cursor: pointer;
   transition: color 0.2s linear;
   min-width: 84px;
+  transform: translateX(17px);
 }
 .header-button:hover {
   color: var(--purple-hover);
@@ -351,7 +358,7 @@ img {
 }
 .hero-header-form__button {
   padding-left: 0;
-  padding-right: 7px;
+  padding-right: 11px;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -360,7 +367,7 @@ img {
   transform: translateY(4px);
 }
 .hero-header-form__input {
-  margin-right: 8px;
+  margin-right: -4px;
   background-color: transparent;
   border: none;
   font-size: 18px;
